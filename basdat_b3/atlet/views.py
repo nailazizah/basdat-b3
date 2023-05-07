@@ -7,3 +7,7 @@ def tes_kualifikasi(request):
 
 def tes_kualifikasi_form(request):
     return render(request, "tes_kualifikasi_form.html")
+
+def dashboard_atlet(request):
+    return render(request, "dashboard_atlet.html")
+
