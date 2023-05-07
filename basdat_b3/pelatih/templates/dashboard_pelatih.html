@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Pelatih Dashboard</title>
+{% endblock meta %}
+
+{% block content %}
+
+<!-- Section: Design Block -->
+<section class="text-center">
+  <!-- Background image -->
+  <div class="p-5 bg-image" style="
+        background-image: url('https://previews.123rf.com/images/elenabukharina/elenabukharina1704/elenabukharina170400068/75888660-let-s-play-badminton-seamless-background-of-badminton-rackets-and-shuttlecocks-pattern.jpg');
+        height: 300px;
+        "></div>
+  <!-- Background image -->
+
+  <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+        margin-top: -100px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);
+        ">
+    <div class="card-body py-5 px-md-5 justify-content-between">
+        <div class="row d-flex justify-content-center">
+              <h2 class="fw-bold mb-5">Atlet Dashboard</h2>
+        <style>
+            table {
+              border-collapse: collapse;
+              width: 200%;
+            }
+            
+            th, td {
+              padding: 8px;
+              text-align: center;
+              border-bottom: 1px solid #ddd;
+            }
+            
+            tr:hover {background-color: greenyellow;}
+            </style>
+            </head>
+            <body>
+            
+            <table>
+              <tr>
+                <th>Nama</th>
+                <th>Negara</th>
+                <th>Email</th>
+                <th>Spesialisasi Kategori</th>
+                <th>Tanggal Mulai</th>
+              </tr>
+              <tr>
+                <td>Maritsa Bigg</td>
+                <td>-</td>
+                <td>mbiggh@ucsd.edu</td>
+                <td>Ganda Putra</td>
+                <td>2022-03-04</td>
+            </table>            
+           
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
+
+{% endblock content %}
+
