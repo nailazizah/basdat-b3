@@ -1,0 +1,59 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block meta %}
+<title>Daftar Event</title>
+{% endblock meta %}
+
+{% block content %} 
+<body>
+
+<h2 style="text-align: center;">Daftar Event</h2>
+
+<table border="1" width="700" style="margin-left:auto;margin-right:auto">
+  <tr>
+    <th>Nama Event</th>
+    <th>Total Hadiah</th>
+    <th>Tanggal Mulai</th>
+    <th>Kategori</th>
+    <th>Kapasitas</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>EventA</td>
+    <td>Rp 5.000.000</td>
+    <td>12-04-2023</td>
+    <td>S200</td>
+    <td>3/8</td>
+    <td>
+      <a href="/detail-event.html">Pilih</a>
+    </td>
+  </tr>
+  <tr>
+    <td>EventB</td>
+    <td>Rp 4.000.000</td>
+    <td>27-07-2023</td>
+    <td>S100</td>
+    <td>8/8</td>
+    <td>
+      <a href="/detail-event.html">Pilih</a>
+    </td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table>
+
+</body>
+
+<style>
+    th, td {
+        text-align: left;
+    }
+</style>
+{% endblock content %} 
