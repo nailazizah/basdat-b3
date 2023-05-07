@@ -1,102 +1,136 @@
-{% extends 'base.html'%}
+
+{% extends 'base.html' %}
 {% load static %}
 
 {% block meta %}
 <title>Pilih Kategori</title>
 {% endblock meta %}
 
-{% block content %}  
-<body>
+{% block content %}
 
-<h2 style="text-align: center;">Pilih Kategori</h2>
+<!-- Section: Design Block -->
+<main>
+    <section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+            background-image: url('https://previews.123rf.com/images/elenabukharina/elenabukharina1704/elenabukharina170400068/75888660-let-s-play-badminton-seamless-background-of-badminton-rackets-and-shuttlecocks-pattern.jpg');
+            height: 300px;
+            "></div>
+    <!-- Background image -->
 
-<table width="400" style="margin-left:auto;margin-right:auto">
-        <tr>
-            <th>Event</th>
-            <td>Event A</td>
-        </tr>
-        <tr>
-            <th>Hadiah</th>
-            <td>Rp 5.000.000</td>
-        </tr>
-        <tr>
-            <th>Tanggal Mulai</th>
-            <td>12-04-2023</td>
-        </tr>
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+            margin-top: -200px;
+            background: hsla(0, 0%, 100%, 0.8);
+            backdrop-filter: blur(30px);
+            ">
+        <div class="card-body py-5 px-md-5">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+            <h2 class="fw-bold mb-5">Pilih Kategori</h2>
+            <table width="400">
+                <tr>
+                    <th>Event</th>
+                    <td>Event A</td>
+                </tr>
+                <tr>
+                    <th>Hadiah</th>
+                    <td>Rp 5.000.000</td>
+                </tr>
+                <tr>
+                    <th>Tanggal Mulai</th>
+                    <td>12-04-2023</td>
+                </tr>
+                    <tr>
+                    <th>Tanggal Selesai</th>
+                    <td>15-04-2023</td>
+                </tr>
+                <tr>
+                    <th>Kategori</th>
+                    <td>S200</td>
+                </tr>
+                <tr>
+                    <th>Kapasitas</th>
+                    <td>50/64</td>
+                </tr>
+                <tr>
+                    <th>Stadium</th>
+                    <td>GBK</td>
+                </tr>
+            </tr>
             <tr>
-            <th>Tanggal Selesai</th>
-            <td>15-04-2023</td>
-        </tr>
-        <tr>
-            <th>Kategori</th>
-            <td>S200</td>
-        </tr>
-        <tr>
-            <th>Kapasitas</th>
-            <td>50/64</td>
-        </tr>
-        <tr>
-            <th>Stadium</th>
-            <td>GBK</td>
-        </tr>
-    </tr>
-    <tr>
-        <th>Negara</th>
-        <td>Indonesia</td>
-    </tr>
-        </tbody>
-        </table>
-
-    <br></br>
-    
-    <table border="1" width="400" style="margin-left:auto;margin-right:auto">
-        <tr>
-            <th>Kategori</th>
-            <th>Partner</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>Tunggal Putra</td>
-            <td>-</td>
-            <td>
-                <a href="{% url 'atlet:enrolled_event' %}">Join</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Ganda Putra</td>
-            <td><select class="dropdown">
-                <option selected>Pilih Atlet</option>
-                <option value="1">Atlet 1</option>
-                <option value="2">Atlet 2</option>
-                <option value="3">Atlet 3</option>
-                </select>
-            </td>
-            <td>
-                <a href="{% url 'atlet:enrolled_event' %}">Join</a>
-            </td>
-        </tr>
-        <tr>
-            <td>Ganda Campuran</td>
-            <td><select class="dropdown">
-                <option selected>Pilih Atlet</option>
-                <option value="1">Atlet 1</option>
-                <option value="2">Atlet 2</option>
-                <option value="3">Atlet 3</option>
-                </select>
-            </td>
-            <td>
-                <a href="{% url 'atlet:enrolled_event' %}">Join</a>
-            </td>
-        </tr>
-        </tbody>
-        </table>
-
+                <th>Negara</th>
+                <td>Indonesia</td>
+            </tr>
+                </tbody>
+                </table>
+        
+            <br></br>
+            
+            <table border="1.5" width="700" style="margin-left:auto;margin-right:auto">
+                <tr>
+                    <th>Kategori</th>
+                    <th>Partner</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Tunggal Putra</td>
+                    <td>-</td>
+                    <td>
+                        <a href="{% url 'atlet:enrolled_event' %}">Join</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ganda Putra</td>
+                    <td><select class="dropdown">
+                        <option selected>Pilih Atlet</option>
+                        <option value="1">Atlet 1</option>
+                        <option value="2">Atlet 2</option>
+                        <option value="3">Atlet 3</option>
+                        </select>
+                    </td>
+                    <td>
+                        <a href="{% url 'atlet:enrolled_event' %}">Join</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ganda Campuran</td>
+                    <td><select class="dropdown">
+                        <option selected>Pilih Atlet</option>
+                        <option value="1">Atlet 1</option>
+                        <option value="2">Atlet 2</option>
+                        <option value="3">Atlet 3</option>
+                        </select>
+                    </td>
+                    <td>
+                        <a href="{% url 'atlet:enrolled_event' %}">Join</a>
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+        </div>
+        </div>
+    </div>
+    </section>
 </main>
-    <style>
-        th, td {
+
+<style>
+    form {
+        display: none;
+    }
+
+    form:target {
+        display: block;
+    }
+
+    .current {
+    background: #c9e2bf !important;
+    background-color: #c5e2bf !important;
+    color: #345531;
+    }
+    th, td {
             text-align: left;
         }
-    </style>
-</body>
-
-{% endblock content %}  
+</style>
+{% endblock content %}
