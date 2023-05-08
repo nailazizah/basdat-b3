@@ -1,0 +1,114 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Daftar Event</title>
+{% endblock meta %}
+
+{% block content %}
+
+<!-- Section: Design Block -->
+<main>
+    <section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+            background-image: url('https://previews.123rf.com/images/elenabukharina/elenabukharina1704/elenabukharina170400068/75888660-let-s-play-badminton-seamless-background-of-badminton-rackets-and-shuttlecocks-pattern.jpg');
+            height: 300px;
+            "></div>
+    <!-- Background image -->
+
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+            margin-top: -200px;
+            background: hsla(0, 0%, 100%, 0.8);
+            backdrop-filter: blur(30px);
+            ">
+        <div class="card-body py-5 px-md-5">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+            <h2 class="fw-bold mb-5">Daftar Event</h2>
+          
+            <table width="700" style="margin-left:auto;margin-right:auto">
+              <tr>
+                <th scope="col">Nama Event</th>
+                <th scope="col">Total Hadiah</th>
+                <th scope="col">Tanggal Mulai</th>
+                <th scope="col">Kategori</th>
+                <th scope="col">Kapasitas</th>
+                <th scope="col"></th>
+              </tr>
+              <tr>
+                <td>EventA</td>
+                <td>Rp 5.000.000</td>
+                <td>12-04-2023</td>
+                <td>S200</td>
+                <td>3/8</td>
+                <td>
+                  <a class="flex-sm-fill text-sm-center nav-link current" aria-current="page"
+                                        href="#">Pilih</a>
+                </td>
+              </tr>
+              <tr>
+                <td>EventB</td>
+                <td>Rp 4.000.000</td>
+                <td>27-07-2023</td>
+                <td>S100</td>
+                <td>8/8</td>
+                <td>
+                  <!-- <a class="flex-sm-fill text-sm-center nav-link current" aria-current="page"
+                                        href="#t">Pilih</a> -->
+                </td>
+              </tr>
+              <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+            </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+</main>
+<!-- Section: Design Block -->
+<script>
+    // Get the container element
+    var btnContainer = document.getElementById("nav-member");
+
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("nav-link");
+
+    // Loop through the buttons and add the active class to the current/clicked button
+    // first tab is active
+
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("current");
+            current[0].className = current[0].className.replace("current", "");
+            this.className += " current";
+        });
+
+    }
+</script>
+
+<style>
+    form {
+        display: none;
+    }
+
+    form:target {
+        display: block;
+    }
+
+    .current {
+    background: #c9e2bf !important;
+    background-color: #c5e2bf !important;
+    color: #345531;
+    }
+</style>
+{% endblock content %}

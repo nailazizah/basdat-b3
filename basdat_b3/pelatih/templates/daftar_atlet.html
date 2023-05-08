@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block meta %}
+<title>List Atlet</title>
+
+{% endblock meta %}
+
+{% block content %}
+
+<main>
+    <div class="p-5 bg-image" style="
+    background-image: url('https://previews.123rf.com/images/elenabukharina/elenabukharina1704/elenabukharina170400068/75888660-let-s-play-badminton-seamless-background-of-badminton-rackets-and-shuttlecocks-pattern.jpg');
+    height: 300px;
+    "></div>
+    <div class="card mx-8 mx-md-5 shadow-5-strong" style="
+        margin-top: -200px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);
+        ">
+    <div class="card-body py-5 px-md-5 justify-content-between">
+            <h2 class="fw-bold mb-5 text-center">Daftar Atlet</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="inputNama" class="form-label">Atlet yang akan didaftarkan</label>
+                    <select class="form-control border border-primary form-select" aria-label="Default select example" required>
+                        <option selected>Pilih Atlet</option>
+                        <option value="1">Atlet 1</option>
+                        <option value="2">Atlet 2</option>
+                        <option value="3">...</option>
+                      </select>
+                </div>
+                <div class="d-grid mt-5">
+                    <button class="btn btn-primary" type="submit"><a href="{% url 'pelatih:list_atlet' %}">Submit</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}

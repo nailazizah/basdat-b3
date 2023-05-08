@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Login</title>
+{% endblock meta %}
+
+{% block content %}
+
+<!-- Section: Design Block -->
+<section class="text-center">
+  <!-- Background image -->
+  <div class="p-5 bg-image" style="
+        background-image: url('https://previews.123rf.com/images/elenabukharina/elenabukharina1704/elenabukharina170400068/75888660-let-s-play-badminton-seamless-background-of-badminton-rackets-and-shuttlecocks-pattern.jpg');
+        height: 300px;
+        "></div>
+  <!-- Background image -->
+
+  <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+        margin-top: -100px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);
+        ">
+    <div class="card-body py-5 px-md-5 justify-content-between">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-5">Form Data Kualifikasi</h2>
+          <form>
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">Nomor Batch</label>
+              <input type="nama" id="form3Example3" class="form-control" />
+            </div>
+
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example3">Tempat Pelaksanaan</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected> </option>
+                    <option value="1">Indonesia</option>
+                    <option value="2">Thailand</option>
+                    <option value="3">Belanda</option>
+                    <option value="3">USA</option>
+                </select>
+            </div>
+
+            <div class="form-outline mb-5">
+                <label class="form-label" for="form3Example3">Tanggal Pelaksanaan</label>
+                <select class="form-select" aria-label="Default select example">
+                <option selected> </option>
+                <option value="1">2018-12-21</option>
+                <option value="2">2019-08-01</option>
+                <option value="3">2022-01-30</option>
+                <option value="4">2022-04-13</option>
+                </select>
+            
+            </div>
+
+
+            <div class="d-grid mt-5">
+              <a href="{% url 'atlet:tes_kualifikasi' %}"><button class="btn btn-primary" type="submit">Next</button></a>
+            </div>
+        </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
+
+{% endblock content %}
