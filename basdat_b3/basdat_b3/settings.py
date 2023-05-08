@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'atlet',
     'sponsor',
     'pertandingan',
+    'pelatih',
+    'umpire'
 ]
 
 MIDDLEWARE = [

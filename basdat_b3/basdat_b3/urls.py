@@ -23,4 +23,6 @@ urlpatterns = [
     path('sponsor/', include('sponsor.urls')),
     path('atlet/', include('atlet.urls')),
     path('pertandingan/', include('pertandingan.urls')),
+    path('pelatih/', include('pelatih.urls')),
+    path('umpire/', include('umpire.urls')),
 ]

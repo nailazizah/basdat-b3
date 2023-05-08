@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=D:\alle\Pelajaran\ALLE - SMT 4\BasDat\basdat-b3\basdat_b3\env
+=======
+set VIRTUAL_ENV=D:\- Kuliah\Basdat\TK3\basdat-b3\basdat_b3\env
+>>>>>>> 84c8ed47dabd47de8a01b19b4bad3e446ae72434
 
 if not defined PROMPT set PROMPT=$P$G
 
