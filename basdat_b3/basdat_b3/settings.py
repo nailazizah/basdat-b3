@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'authentication',
-    'sponsor',
     'atlet',
+    'sponsor',
+    'pertandingan',
     'pelatih',
     'umpire'
 ]

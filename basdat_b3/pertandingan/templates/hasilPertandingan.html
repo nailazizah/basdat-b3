@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Pertandingan</title>
+{% endblock meta %}
+
+{% block content %}
+{% include 'navbarUmpire.html' %}
+<!-- Section: image -->
+<div class="p-5 bg-image" style="
+        background-image: url('https://previews.123rf.com/images/elenabukharina/elenabukharina1704/elenabukharina170400068/75888660-let-s-play-badminton-seamless-background-of-badminton-rackets-and-shuttlecocks-pattern.jpg');
+        height: 300px;
+        "></div>
+<!-- Section: table -->
+
+<div class="card mx-4 mx-md-5 shadow-5-strong" style="
+margin-top: -100px;
+background: hsla(0, 0%, 100%, 0.8);
+backdrop-filter: blur(30px);">
+    <div>
+        <div class="text-center" style="margin: 1px;">
+            HASIL PERTANDINGAN [Nama Event]
+        </div>
+        <div style="margin: 5px;">
+            Nama Event : [nama]
+        </div>
+        <div style="margin: 5px;">
+            Stadium : [stadium]
+        </div>
+        <div style="margin: 5px;">
+            Hadiah : [hadiah]
+        </div>
+        <div style="margin: 5px;">
+            Kategori Superseries : [kategori]
+        </div>
+        <div style="margin: 5px;">
+            Tanggal Mulai : [tanggal mulai]
+        </div>
+        <div style="margin: 5px;">
+            Tanggal Selesai : [tanggal selesai]
+        </div>
+        <div style="margin: 5px;">
+            Kapasitas : [isi kapasitas]
+        </div>
+    </div>
+</div>
+
+<div class="card mx-4 mx-md-5 shadow-5-strong" style="
+margin-top: 100px;
+margin-bottom: 100px;
+background: hsla(0, 0%, 100%, 0.8);
+backdrop-filter: blur(30px);">
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+                <th scope="col">Pertandingan Perempat Final [00:00]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-success">
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">4</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+    <button>next</button>
+</div>
+{% endblock content %}
