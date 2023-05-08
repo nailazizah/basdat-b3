@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Daftar Sponsor</title>
+{% endblock meta %}
+
+{% block content %}
+<section class="">
+  <!-- Background image -->
+  <div class="p-5 bg-image" style="
+        background-image: url('https://previews.123rf.com/images/elenabukharina/elenabukharina1704/elenabukharina170400068/75888660-let-s-play-badminton-seamless-background-of-badminton-rackets-and-shuttlecocks-pattern.jpg');
+        height: 300px;
+        "></div>
+  <!-- Background image -->
+
+  <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+        margin-top: -100px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);
+        ">
+    <div class="card-body py-5 px-md-5 justify-content-between">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <div class="h-full d-flex flex-column gap-4 justify-content-center align-items-center">
+    <section id="header" class="space-y-2">
+      <div class="text-black font-weight-bold space-y-2">
+        <div class="display-5 text-primary font-weight-bold text-center">Mendaftar Sponsor</div>
+      <div class="text-lg text-center text-muted max-w-md mt-4">
+        Daftarkan Sponsormu!
+      </div>
+    </section>
+    <section id="buttons" class="w-100">
+      <form method="POST" action="" class="">
+  <section id="daftar-atlet-field" class="">
+    <div class="dropdown mb-3 row">
+        <label for="daftar_sponsor" class="form-label fw-semibold">Nama Sponsor</label>
+  <select class="form-control border border-primary form-select " aria-label="Default select example" required>
+        <option selected>Pilih Sponsor</option>
+        <option value="1">Djarum Coklat</option>
+        <option value="2">Gudang Garam</option>
+    </select>
+    </div>
+    <div class="mb-3">
+                        <label for="inputTglMulai" class="form-label fw-semibold">Tanggal Mulai</label>
+                        <input type="date" class="form-control border border-primary" id="inputTglMulai" required>
+                    </div>
+    <div class="mb-3">
+                        <label for="inputTglSelesai" class="form-label fw-semibold">Tanggal Selesai</label>
+                        <input type="date" class="form-control border border-primary" id="inputTglMulai" required>
+                    </div>
+  <hr>
+  <section id="auth-login-submit" class="mb-3">
+    <button class="btn btn-primary w-100" type="submit">
+      <a href="" class="fw-semibold">SUBMIT</a>
+    </button>
+  </section>
+</form>
+    </section>
+    <section class="h-4"></section>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
