@@ -22,4 +22,5 @@ urlpatterns = [
     path('authentication/', include('authentication.urls')),
     path('atlet/', include('atlet.urls')),
     path('pelatih/', include('pelatih.urls')),
+    path('umpire/', include('umpire.urls')),
 ]
