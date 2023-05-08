@@ -1,0 +1,76 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>List Atlet</title>
+{% endblock meta %}
+
+{% block content %}
+
+<!-- Section: Design Block -->
+<main>
+    <section class="text-center">
+    <!-- Background image -->
+    <div class="p-5 bg-image" style="
+            background-image: url('https://previews.123rf.com/images/elenabukharina/elenabukharina1704/elenabukharina170400068/75888660-let-s-play-badminton-seamless-background-of-badminton-rackets-and-shuttlecocks-pattern.jpg');
+            height: 300px;
+            "></div>
+    <!-- Background image -->
+
+    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+            margin-top: -200px;
+            background: hsla(0, 0%, 100%, 0.8);
+            backdrop-filter: blur(30px);
+            ">
+        <div class="card-body py-5 px-md-5">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+            <h2 class="fw-bold mb-5">List Atlet</h2>
+          
+            <table width="700" style="margin-left:auto;margin-right:auto">
+              <tr>
+                <th scope="col">Nama Atlet</th>
+                <th scope="col">Email</th>
+                <th scope="col">World Rank</th>
+              </tr>
+              <tr>
+                <td>Risa Klessmann</td>
+                <td>rklessmann0@slideshare.net</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Billie Bathurst</td>
+                <td>bbathurst1@google.com.au</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+            </table>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+</main>
+
+<style>
+    form {
+        display: none;
+    }
+
+    form:target {
+        display: block;
+    }
+
+    .current {
+    background: #c9e2bf !important;
+    background-color: #c5e2bf !important;
+    color: #345531;
+    }
+</style>
+{% endblock content %}
